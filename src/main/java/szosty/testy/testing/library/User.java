@@ -1,0 +1,63 @@
+package szosty.testy.testing.library;
+
+import java.util.Objects;
+
+public class User {
+    String firstName;
+    String lastName;
+    String pesel;
+
+    public User(String firstName, String lastName, String pesel) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.pesel = pesel;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", pesel='" + pesel + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(pesel, user.pesel);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, pesel);
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getPesel() {
+        return pesel;
+    }
+
+    public void setPesel(String pesel) {
+        this.pesel = pesel;
+    }
+}

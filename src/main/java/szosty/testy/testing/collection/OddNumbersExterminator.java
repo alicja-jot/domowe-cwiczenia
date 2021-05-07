@@ -1,4 +1,4 @@
-package testing.collection;
+package szosty.testy.testing.collection;
 
 import java.util.ArrayList;
 
