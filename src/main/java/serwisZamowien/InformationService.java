@@ -1,4 +1,5 @@
 package serwisZamowien;
 
-public class InformationService {
+public interface InformationService {
+    void inform(User user);
 }

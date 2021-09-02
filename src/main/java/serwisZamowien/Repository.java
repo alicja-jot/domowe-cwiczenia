@@ -1,4 +1,5 @@
 package serwisZamowien;
 
-public class OrderRepository {
+public interface Repository {
+    void createOrder(User user, Product product, int amount);
 }

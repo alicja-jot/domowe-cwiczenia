@@ -1,4 +1,8 @@
 package osmy.exception.test;
 
-public class RouteNotFoundException {
+public class RouteNotFoundException extends Exception {
+
+    public RouteNotFoundException(String message) {
+        super(message);
+    }
 }

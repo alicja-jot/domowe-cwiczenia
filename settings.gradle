@@ -1,2 +1,4 @@
 rootProject.name = 'domowe-cwiczenia'
+include 'spring-wprowadzenie'
+include 'spring'
 
